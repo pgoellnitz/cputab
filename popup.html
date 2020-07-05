@@ -13,22 +13,26 @@
         background-color: white;
       }
       li {
-        display: block;
+        display: inline-flex;
         color: black;
         text-align: center;
         padding: 7px 16px;
         text-decoration: none;
         font-size: 14px;
+        width: 200px;
         }
       li:hover {
         cursor: pointer;
         background-color: whitesmoke;
       }
+      .separator {
+        border-bottom: 1px solid lightgrey;
+      }
       </style>
     </head>
     <body>
       <ul>
-          <li id="toggle">Toggle</li>
+          <li id="toggle" class="separator">(off) Show CPU usage</li>
           <li id="about">About</li>
       </ul>
         <script src="popup.js"></script>

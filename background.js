@@ -11,7 +11,7 @@ chrome.processes.onUpdated.addListener(function(update) {
         const tabId = update[key].tasks[0].tabId;
         if (tabId) {
           chrome.tabs.get(tabId, function(tab) {
-            const title = tab.title.split(" ").pop()
+            const title = tab.title.split("% ", 2).pop()
             chrome.tabs.executeScript(
               tabId,
               { code:'document.title = "' + Math.round(cpu) + '% ' + title + '"'},
