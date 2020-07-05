@@ -1,7 +1,7 @@
 {
-  "name": "Getting Started Example",
+  "name": "CpuTab",
   "version": "1.0",
-  "description": "Build an Extension",
+  "description": "Adds CPU usage to tab description",
   "permissions": [
     "tabs",
     "processes",
@@ -16,7 +16,6 @@
     },
   "browser_action": {
       "default_title": "CpuTab",
-      "default_popup": "popup.html",
       "default_icon": {
         "16": "images/icon_16.png",
         "32": "images/icon_32.png",
