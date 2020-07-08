@@ -1,11 +1,10 @@
 {
   "name": "CpuTab",
-  "version": "1.0",
+  "version": "0.0.1",
   "description": "Adds CPU usage to tab description",
   "permissions": [
     "tabs",
     "processes",
-    "declarativeContent",
     "http://*/",
     "https://*/",
     "storage"
